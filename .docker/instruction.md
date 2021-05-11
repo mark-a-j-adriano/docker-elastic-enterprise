@@ -5,7 +5,7 @@ https://docs.docker.com/registry/deploying/
 
 # How to:
 
-1. Set DOTENV file. Copy it from example: `cp .env.docker.dist .env`.
+1. Set DOTENV file. Copy it from example: `cp .env.dist .env`.
 
 2) Make cache directory: `mkdir silverstripe-cache`.
 
@@ -15,6 +15,6 @@ https://docs.docker.com/registry/deploying/
 
    `dscacheutil -flushcache`
 
-4) Run Docker: `dstart` or `docker-compose up -d`
+4) Run Docker: `docker-compose up -d`
 
-5) SSH into docker container: `dssh` or `docker-compose exec sample-www bash`
+5) SSH into docker container: `docker-compose exec sample-www bash`
